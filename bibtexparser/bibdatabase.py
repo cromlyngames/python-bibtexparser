@@ -67,6 +67,8 @@ class BibDatabase(object):
         self._not_updated_by_crossref = ['_FROM_CROSSREF']
 
     def load_common_strings(self):
+        # Updates strings in the object to a common format
+        # as of 20211217 this only changes months from short to long form
         self.strings.update(COMMON_STRINGS)
 
     def get_entry_list(self):
